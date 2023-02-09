@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_icon_item.bp_label
+    - paragraphs.paragraphs_type.bp_icon_item
+id: paragraph.bp_icon_item.default
+targetEntityType: paragraph
+bundle: bp_icon_item
+mode: default
+content:
+  bp_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

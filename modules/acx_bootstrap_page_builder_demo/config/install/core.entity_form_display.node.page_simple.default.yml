@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page_simple.field_page_content
+    - node.type.page_simple
+  module:
+    - paragraphs
+id: node.page_simple.default
+targetEntityType: node
+bundle: page_simple
+mode: default
+content:
+  field_page_content:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

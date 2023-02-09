@@ -1,0 +1,9 @@
+name: Webform - Bootstrap page builder (demo)
+type: module
+description: ''
+package: AlmaviaCX
+core_version_requirement: ^8 || ^9 || ^10
+
+dependencies:
+  - paragraphs
+  - acx_bootstrap_page_builder

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_content
+    - node.type.page_simple
+    - paragraphs.paragraphs_type.bp_container
+  module:
+    - entity_reference_revisions
+id: node.page_simple.field_page_content
+field_name: field_page_content
+entity_type: node
+bundle: page_simple
+label: 'Page content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bp_container: bp_container
+    negate: 0
+    target_bundles_drag_drop:
+      bp_container:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.bp_width
+field_name: bp_width
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: col-lg col-xl col-12
+      label: Adaptive
+    -
+      value: col-lg-3 col-xl-3 col-12
+      label: 25%
+    -
+      value: col-lg-4 col-xl-4 col-12
+      label: 33%
+    -
+      value: col-lg-6 col-xl-6 col-12
+      label: 50%
+    -
+      value: col-lg-8 col-xl-8 col-12
+      label: 66%
+    -
+      value: col-lg-9 col-xl-9 col-12
+      label: 75%
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

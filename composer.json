@@ -1,0 +1,14 @@
+{
+  "name": "drupal/acx_bootstrap_page_builder",
+  "description": "Bootstrap page builder",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/core": "^8.8 || ^9"
+  },
+  "require-dev": {
+    "drupal/paragraphs": "^1",
+    "drupal/field_group": "^1"
+  }
+}

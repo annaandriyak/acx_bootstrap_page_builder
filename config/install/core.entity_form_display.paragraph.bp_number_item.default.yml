@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_number_item.bp_label
+    - field.field.paragraph.bp_number_item.bp_short_description
+    - paragraphs.paragraphs_type.bp_number_item
+id: paragraph.bp_number_item.default
+targetEntityType: paragraph
+bundle: bp_number_item
+mode: default
+content:
+  bp_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_short_description:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

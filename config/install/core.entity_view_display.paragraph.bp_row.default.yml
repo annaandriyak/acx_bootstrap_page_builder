@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_row.bp_animation
+    - field.field.paragraph.bp_row.bp_items
+    - paragraphs.paragraphs_type.bp_row
+  module:
+    - entity_reference_revisions
+id: paragraph.bp_row.default
+targetEntityType: paragraph
+bundle: bp_row
+mode: default
+content:
+  bp_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  bp_animation: true

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_items
+    - paragraphs.paragraphs_type.bp_container
+  module:
+    - entity_reference_revisions
+id: paragraph.bp_row.bp_items
+field_name: bp_items
+entity_type: paragraph
+bundle: bp_container
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bp_row: bp_row
+    negate: 0
+    target_bundles_drag_drop:
+      bp_row:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

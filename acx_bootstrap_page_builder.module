@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap page builder module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function acx_bootstrap_page_builder_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__container' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__bp_row' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__bp_slider_item' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}

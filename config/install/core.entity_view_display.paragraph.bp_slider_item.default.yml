@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_slider_item.bp_description
+    - field.field.paragraph.bp_slider_item.bp_label
+    - field.field.paragraph.bp_slider_item.bp_link
+    - field.field.paragraph.bp_slider_item.bp_media
+    - paragraphs.paragraphs_type.bp_slider_item
+  module:
+    - link
+    - media
+    - text
+id: paragraph.bp_slider_item.default
+targetEntityType: paragraph
+bundle: bp_slider_item
+mode: default
+content:
+  bp_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  bp_label:
+    type: string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  bp_link:
+    type: link
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  bp_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content

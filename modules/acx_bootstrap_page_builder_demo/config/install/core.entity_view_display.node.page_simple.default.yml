@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page_simple.field_page_content
+    - node.type.page_simple
+  module:
+    - entity_reference_revisions
+id: node.page_simple.default
+targetEntityType: node
+bundle: page_simple
+mode: default
+content:
+  field_page_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
