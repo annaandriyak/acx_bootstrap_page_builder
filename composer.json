@@ -1,5 +1,5 @@
 {
-  "name": "drupal/acx_bootstrap_page_builder",
+  "name": "Bootstrap page builder",
   "description": "Bootstrap page builder",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
@@ -12,3 +12,4 @@
     "drupal/field_group": "^1"
   }
 }
+
