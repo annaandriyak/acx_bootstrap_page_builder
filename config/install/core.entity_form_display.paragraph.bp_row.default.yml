@@ -6,7 +6,43 @@ dependencies:
     - field.field.paragraph.bp_row.bp_items
     - paragraphs.paragraphs_type.bp_row
   module:
+    - field_group
     - paragraphs
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_tab_1
+        - group_tab_2
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_tab_1:
+      children:
+        - bp_items
+      label: Content
+      region: content
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      format_settings: {  }
+    group_tab_2:
+      children:
+        - bp_animation
+      label: Options
+      region: content
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings: {  }
 id: paragraph.bp_row.default
 targetEntityType: paragraph
 bundle: bp_row

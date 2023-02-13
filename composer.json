@@ -4,20 +4,6 @@
     "type": "drupal-module",
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "owlcarousel2/owlcarousel2",
-                "version": "2.3.4",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/OwlCarousel2/OwlCarousel2/archive/2.3.4.zip",
-                    "type": "zip"
-                }
-            }
-        }
-    ],
     "require": {
         "drupal/paragraphs": "*",
         "drupal/field_group": "*",

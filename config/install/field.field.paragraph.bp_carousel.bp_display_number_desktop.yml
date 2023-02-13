@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_display_number_desktop
+    - paragraphs.paragraphs_type.bp_carousel
+id: paragraph.bp_carousel_item.bp_display_number_desktop
+field_name: bp_display_number_desktop
+entity_type: paragraph
+bundle: bp_carousel
+label: 'Display number desktop'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: integer

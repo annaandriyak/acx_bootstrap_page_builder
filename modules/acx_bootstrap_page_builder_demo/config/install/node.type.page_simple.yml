@@ -2,6 +2,6 @@ langcode: en
 status: true
 dependencies: {  }
 third_party_settings: {  }
-name: 'Page simple'
+name: 'Bootstrap page builder (demo content type)'
 type: page_simple
 description: ''

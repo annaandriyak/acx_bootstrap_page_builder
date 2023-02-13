@@ -4,8 +4,11 @@
   ]
 %}
 
+{% set desktop = paragraph.bp_display_number_desktop.value %}
+{% set mobile = paragraph.bp_display_number_mobile.value %}
+
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes).setAttribute('data-desktop', desktop).setAttribute('data-mobile', mobile) }}>
     {% block content %}
       {{ content }}
     {% endblock %}
