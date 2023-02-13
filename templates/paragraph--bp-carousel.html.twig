@@ -1,0 +1,15 @@
+{%
+  set classes = [
+    'owl-carousel'
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+
+{{ attach_library('acx_bootstrap_page_builder/owlcarousel') }}
