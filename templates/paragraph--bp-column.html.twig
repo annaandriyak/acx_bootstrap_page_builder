@@ -1,0 +1,13 @@
+{%
+  set classes = [
+    paragraph.bp_width.value
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

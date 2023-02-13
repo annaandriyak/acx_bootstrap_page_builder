@@ -10,14 +10,24 @@
  */
 function acx_bootstrap_page_builder_theme($existing, $type, $theme, $path) {
   return [
-    'paragraph__container' => [
+    'paragraph__bp_container' => [
       'base hook' => 'paragraph',
     ],
     'paragraph__bp_row' => [
       'base hook' => 'paragraph',
     ],
+    'paragraph__bp_column' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__bp_slider' => [
+      'base hook' => 'paragraph',
+    ],
     'paragraph__bp_slider_item' => [
       'base hook' => 'paragraph',
     ],
+    'field__bp_items' => [
+      'base hook' => 'field',
+    ],
   ];
 }
+

@@ -2,14 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.bp_column.bp_items
     - field.field.paragraph.bp_column.bp_media
     - field.field.paragraph.bp_column.bp_width
     - paragraphs.paragraphs_type.bp_column
+  module:
+    - entity_reference_revisions
 id: paragraph.bp_column.default
 targetEntityType: paragraph
 bundle: bp_column
 mode: default
-content: {  }
+content:
+  bp_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   bp_media: true
   bp_width: true

@@ -2,19 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.bp_container_width
+    - field.storage.paragraph.bp_color
     - paragraphs.paragraphs_type.bp_container
   module:
-    - options
-id: paragraph.bp_container.bp_container_width
-field_name: bp_container_width
+    - color_field
+id: paragraph.bp_container.bp_color
+field_name: bp_color
 entity_type: paragraph
 bundle: bp_container
-label: Width
+label: 'Background color'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  opacity: 0
+field_type: color_field_type

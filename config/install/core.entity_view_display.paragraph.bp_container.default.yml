@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.bp_container.bp_color
     - field.field.paragraph.bp_container.bp_container_width
     - field.field.paragraph.bp_container.bp_items
     - field.field.paragraph.bp_container.bp_media
@@ -21,5 +22,6 @@ content:
     weight: 0
     region: content
 hidden:
+  bp_color: true
   bp_container_width: true
   bp_media: true

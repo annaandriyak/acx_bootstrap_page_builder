@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_description
-    - paragraphs.paragraphs_type.bp_slider_item
-id: paragraph.bp_slider_item.bp_description
+    - paragraphs.paragraphs_type.bp_simple_text
+id: paragraph.bp_simple_text.bp_description
 field_name: bp_description
 entity_type: paragraph
-bundle: bp_slider_item
+bundle: bp_simple_text
 label: Text
 description: ''
 required: false

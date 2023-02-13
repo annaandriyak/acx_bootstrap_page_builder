@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_simple_text.bp_description
+    - paragraphs.paragraphs_type.bp_simple_text
+  module:
+    - text
+id: paragraph.bp_simple_text.default
+targetEntityType: paragraph
+bundle: bp_simple_text
+mode: default
+content:
+  bp_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content

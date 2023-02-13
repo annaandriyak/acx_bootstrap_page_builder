@@ -1,0 +1,13 @@
+{%
+  set classes = [
+    'container'
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }} style="background-image: url('{{ file_url(paragraph.bp_media.entity.field_media_image.entity.uri.value) }}'); background-color: {{ paragraph.bp_color.value }}">
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

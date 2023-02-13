@@ -2,16 +2,30 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.bp_column.bp_items
     - field.field.paragraph.bp_column.bp_media
     - field.field.paragraph.bp_column.bp_width
     - paragraphs.paragraphs_type.bp_column
   module:
     - media_library
+    - paragraphs
 id: paragraph.bp_column.default
 targetEntityType: paragraph
 bundle: bp_column
 mode: default
 content:
+  bp_items:
+    type: entity_reference_paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
   bp_media:
     type: media_library_widget
     weight: 1

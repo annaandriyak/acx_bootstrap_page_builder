@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   module:
+    - color_field
     - paragraphs
-id: paragraph.bp_short_description
-field_name: bp_short_description
+id: paragraph.bp_color
+field_name: bp_color
 entity_type: paragraph
-type: string
+type: color_field_type
 settings:
-  unsigned: false
-  size: normal
-module: core
+  format: '#HEXHEX'
+module: color_field
 locked: false
 cardinality: 1
 translatable: true

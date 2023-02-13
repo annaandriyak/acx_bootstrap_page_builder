@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_items
-    - paragraphs.paragraphs_type.bp_row
+    - paragraphs.paragraphs_type.bp_column
   module:
     - entity_reference_revisions
-id: paragraph.bp_row.bp_items
+id: paragraph.bp_column.bp_items
 field_name: bp_items
 entity_type: paragraph
-bundle: bp_row
+bundle: bp_column
 label: Items
 description: ''
 required: false
@@ -20,10 +20,22 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      bp_column: bp_column
+      bp_simple_text: bp_simple_text
+      bp_slider: bp_slider
+      bp_numbers: bp_numbers
+      bp_icons: bp_icons
     negate: 0
     target_bundles_drag_drop:
-      bp_column:
+      bp_simple_text:
         weight: 0
+        enabled: true
+      bp_slider:
+        weight: 1
+        enabled: true
+      bp_numbers:
+        weight: 2
+        enabled: true
+      bp_icons:
+        weight: 3
         enabled: true
 field_type: entity_reference_revisions

@@ -6,7 +6,8 @@
     "minimum-stability": "dev",
     "require": {
         "drupal/paragraphs": "*",
-        "drupal/field_group": "*"
+        "drupal/field_group": "*",
+        "drupal/color_field": "*"
     }
 }
 
