@@ -4,27 +4,71 @@ dependencies:
   config:
     - field.field.paragraph.bp_column.bp_items
     - field.field.paragraph.bp_column.bp_media
-    - field.field.paragraph.bp_column.bp_width
+    - field.field.paragraph.bp_column.bp_column_width
     - paragraphs.paragraphs_type.bp_column
   module:
+    - field_group
     - media_library
     - paragraphs
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_tab_1
+        - group_tab_2
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_tab_1:
+      children:
+        - bp_items
+      label: Content
+      region: content
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      format_settings: {  }
+    group_tab_2:
+      children:
+        - bp_media
+        - bp_column_width
+      label: Styles
+      region: content
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings: {  }
 id: paragraph.bp_column.default
 targetEntityType: paragraph
 bundle: bp_column
 mode: default
 content:
   bp_items:
-    type: entity_reference_paragraphs
+    type: paragraphs
     weight: 2
     region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   bp_media:
     type: media_library_widget
@@ -33,7 +77,7 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  bp_width:
+  bp_column_width:
     type: options_select
     weight: 0
     region: content

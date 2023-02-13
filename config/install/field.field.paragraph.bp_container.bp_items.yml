@@ -6,11 +6,11 @@ dependencies:
     - paragraphs.paragraphs_type.bp_container
   module:
     - entity_reference_revisions
-id: paragraph.bp_row.bp_items
+id: paragraph.bp_container.bp_items
 field_name: bp_items
 entity_type: paragraph
 bundle: bp_container
-label: Items
+label: 'Сontainer content'
 description: ''
 required: false
 translatable: true

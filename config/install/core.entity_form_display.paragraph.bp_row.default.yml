@@ -36,9 +36,7 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings:
-      limited_field_widgets:
-        limit_values: '0'
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

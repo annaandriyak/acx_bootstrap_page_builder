@@ -10,7 +10,7 @@ id: paragraph.bp_column.bp_items
 field_name: bp_items
 entity_type: paragraph
 bundle: bp_column
-label: Items
+label: 'Column content'
 description: ''
 required: false
 translatable: true
@@ -22,6 +22,7 @@ settings:
     target_bundles:
       bp_simple_text: bp_simple_text
       bp_slider: bp_slider
+      bp_carousel: bp_carousel
       bp_numbers: bp_numbers
       bp_icons: bp_icons
     negate: 0
@@ -32,10 +33,13 @@ settings:
       bp_slider:
         weight: 1
         enabled: true
-      bp_numbers:
+      bp_carousel:
         weight: 2
         enabled: true
-      bp_icons:
+      bp_numbers:
         weight: 3
+        enabled: true
+      bp_icons:
+        weight: 4
         enabled: true
 field_type: entity_reference_revisions
