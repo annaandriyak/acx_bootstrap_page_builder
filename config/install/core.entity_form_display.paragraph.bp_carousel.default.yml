@@ -26,6 +26,7 @@ third_party_settings:
         width_breakpoint: 640
     group_tab_1:
       children:
+        - bp_label
         - bp_items
       label: Content
       region: content
@@ -62,9 +63,17 @@ content:
     settings:
       placeholder: ''
     third_party_settings: {  }
+  bp_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   bp_items:
     type: entity_reference_paragraphs
-    weight: 0
+    weight: 1
     region: content
     settings:
       title: Paragraph

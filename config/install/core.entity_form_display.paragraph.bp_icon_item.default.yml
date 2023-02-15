@@ -3,7 +3,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.bp_icon_item.bp_label
+    - field.field.paragraph.bp_icon_item.bp_media
     - paragraphs.paragraphs_type.bp_icon_item
+  module:
+    - entity_reference_revisions
+    - media_library
+    - paragraphs
 id: paragraph.bp_icon_item.default
 targetEntityType: paragraph
 bundle: bp_icon_item
@@ -16,6 +21,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  bp_media:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
 hidden:
   created: true

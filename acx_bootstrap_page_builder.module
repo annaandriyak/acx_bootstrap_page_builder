@@ -28,6 +28,15 @@ function acx_bootstrap_page_builder_theme($existing, $type, $theme, $path) {
     'paragraph__bp_carousel' => [
       'base hook' => 'paragraph',
     ],
+    'paragraph__bp_numbers' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__bp_number_item' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__bp_icon_item' => [
+      'base hook' => 'paragraph',
+    ],
     'field__bp_items' => [
       'base hook' => 'field',
     ],

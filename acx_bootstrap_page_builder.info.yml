@@ -5,6 +5,9 @@ package: AlmaviaCX
 core_version_requirement: ^8 || ^9 || ^10
 
 dependencies:
-  - paragraphs
-  - field_group
-  - color_field
+  - drupal:media
+  - drupal:media_library
+  - entity_reference_revisions:entity_reference_revisions
+  - paragraphs:paragraphs
+  - field_group:field_group
+  - color_field:color_field

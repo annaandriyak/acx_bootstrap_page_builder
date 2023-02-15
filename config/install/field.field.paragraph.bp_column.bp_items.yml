@@ -25,6 +25,7 @@ settings:
       bp_carousel: bp_carousel
       bp_numbers: bp_numbers
       bp_icons: bp_icons
+      bp_modal: bp_modal
     negate: 0
     target_bundles_drag_drop:
       bp_simple_text:
@@ -41,5 +42,8 @@ settings:
         enabled: true
       bp_icons:
         weight: 4
+        enabled: true
+      bp_modal:
+        weight: 5
         enabled: true
 field_type: entity_reference_revisions

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_animation
+    - paragraphs.paragraphs_type.bp_icons
+  module:
+    - options
+id: paragraph.bp_icons.bp_animation
+field_name: bp_animation
+entity_type: paragraph
+bundle: bp_icons
+label: Animation
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

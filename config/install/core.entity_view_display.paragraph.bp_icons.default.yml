@@ -2,22 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.bp_carousel.bp_items
-    - paragraphs.paragraphs_type.bp_carousel
+    - field.field.paragraph.bp_icons.bp_items
+    - paragraphs.paragraphs_type.bp_icons
   module:
     - entity_reference_revisions
-id: paragraph.bp_carousel.default
+id: paragraph.bp_icons.default
 targetEntityType: paragraph
-bundle: bp_carousel
+bundle: bp_icons
 mode: default
 content:
-  bp_label:
-    type: string
-    label: hidden
-    settings: { }
-    third_party_settings: { }
-    weight: 0
-    region: content
   bp_items:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -25,5 +18,5 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content

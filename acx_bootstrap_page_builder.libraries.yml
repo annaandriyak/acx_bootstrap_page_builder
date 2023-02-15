@@ -1,3 +1,17 @@
+row:
+  js:
+    js/row.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+numbers:
+  js:
+    js/numbers.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
 owlcarousel:
   remote: https://github.com/OwlCarousel2/OwlCarousel2
   version: VERSION

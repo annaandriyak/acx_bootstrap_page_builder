@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.bp_icons.bp_items
-    - paragraphs.paragraphs_type.bp_icons
+    - field.field.paragraph.bp_modal.bp_label
+    - paragraphs.paragraphs_type.bp_carousel
   module:
     - field_group
     - paragraphs
@@ -26,7 +26,7 @@ third_party_settings:
         width_breakpoint: 640
     group_tab_1:
       children:
-        - bp_items
+        - bp_label
       label: Content
       region: content
       parent_name: group_tabs
@@ -34,36 +34,25 @@ third_party_settings:
       format_type: tab
       format_settings: {  }
     group_tab_2:
-      children:
-        - bp_animation
+      children: {  }
       label: Options
       region: content
       parent_name: group_tabs
       weight: 2
       format_type: tab
       format_settings: {  }
-id: paragraph.bp_icons.default
+id: paragraph.bp_modal.default
 targetEntityType: paragraph
-bundle: bp_icons
+bundle: bp_modal
 mode: default
 content:
-  bp_animation:
-    type: options_select
-    weight: 0
-    region: content
-    settings: { }
-    third_party_settings: { }
-  bp_items:
-    type: entity_reference_paragraphs
+  bp_label:
+    type: string_textfield
     weight: 0
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

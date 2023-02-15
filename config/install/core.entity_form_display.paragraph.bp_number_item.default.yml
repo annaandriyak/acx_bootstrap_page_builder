@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.bp_number_item.bp_label
-    - field.field.paragraph.bp_number_item.bp_short_description
+    - field.field.paragraph.bp_number_item.bp_number
     - paragraphs.paragraphs_type.bp_number_item
 id: paragraph.bp_number_item.default
 targetEntityType: paragraph
@@ -18,12 +18,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  bp_short_description:
-    type: string_textfield
+  bp_number:
+    type: number
     weight: 1
     region: content
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
 hidden:

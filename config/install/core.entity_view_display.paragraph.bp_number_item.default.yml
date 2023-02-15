@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.bp_number_item.bp_label
-    - field.field.paragraph.bp_number_item.bp_short_description
+    - field.field.paragraph.bp_number_item.bp_number
     - paragraphs.paragraphs_type.bp_number_item
 id: paragraph.bp_number_item.default
 targetEntityType: paragraph
@@ -17,8 +17,8 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  bp_short_description:
-    type: string
+  bp_number:
+    type: number_integer
     label: hidden
     settings: {  }
     third_party_settings: {  }

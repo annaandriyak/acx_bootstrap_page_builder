@@ -3,7 +3,7 @@
  */
 
 (function ($) {
-  Drupal.behaviors.owl = {
+  Drupal.behaviors.bpOWL = {
     attach: function (context, settings) {
       $('.owl-carousel', context).each(function () {
         var mobile = $(this).attr('data-mobile');
