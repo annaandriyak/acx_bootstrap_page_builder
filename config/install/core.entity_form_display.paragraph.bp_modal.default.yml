@@ -26,6 +26,7 @@ third_party_settings:
         width_breakpoint: 640
     group_tab_1:
       children:
+        - bp_body
         - bp_label
       label: Content
       region: content
@@ -46,6 +47,14 @@ targetEntityType: paragraph
 bundle: bp_modal
 mode: default
 content:
+  bp_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   bp_label:
     type: string_textfield
     weight: 0

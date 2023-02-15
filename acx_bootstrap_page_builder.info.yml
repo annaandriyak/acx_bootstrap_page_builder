@@ -2,7 +2,7 @@ name: Webform - Bootstrap page builder
 type: module
 description: ''
 package: AlmaviaCX
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^9 || ^10
 
 dependencies:
   - drupal:media

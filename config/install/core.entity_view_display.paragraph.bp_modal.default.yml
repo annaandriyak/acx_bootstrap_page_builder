@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_modal.bp_body
+    - field.field.paragraph.bp_modal.bp_label
+    - paragraphs.paragraphs_type.bp_modal
+id: paragraph.bp_modal.default
+targetEntityType: paragraph
+bundle: bp_modal
+mode: default
+content: {  }
+hidden:
+  bp_body: true
+  bp_label: true

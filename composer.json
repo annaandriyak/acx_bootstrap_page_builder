@@ -5,8 +5,9 @@
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "require": {
-        "drupal/paragraphs": "*",
+        "drupal/bootstrap": "^3",
+        "drupal/color_field": "*",
         "drupal/field_group": "*",
-        "drupal/color_field": "*"
+        "drupal/paragraphs": "^1"
     }
 }

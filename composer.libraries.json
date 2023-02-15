@@ -1,0 +1,38 @@
+{
+  "name": "annaandriyak/acx_bootstrap_page_builder",
+  "description": "",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "require": {
+    "owlcarousel2/owlcarousel2": "*",
+    "michalsnik/aos": "*"
+  },
+  "repositories": {
+    "owlcarousel2/owlcarousel2": {
+      "type": "package",
+      "package": {
+        "name": "owlcarousel2/owlcarousel2",
+        "version": "2.3.4",
+        "type": "drupal-library",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/OwlCarousel2/OwlCarousel2/archive/2.3.4.zip"
+        }
+      }
+    },
+    "michalsnik/aos": {
+      "type": "package",
+      "package": {
+        "name": "michalsnik/aos",
+        "version": "3.0.0-beta.6",
+        "type": "drupal-library",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/michalsnik/aos/archive/refs/heads/next.zip"
+        }
+      }
+    }
+  }
+}
+
