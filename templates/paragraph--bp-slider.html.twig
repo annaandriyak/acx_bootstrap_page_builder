@@ -7,7 +7,7 @@
 %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }} id="slider-{{ paragraph.id() }}">
+  <div{{ attributes.addClass(classes).setAttribute('data-ride', 'carousel') }} id="slider-{{ paragraph.id() }}">
     {% block content %}
       {{ content|without('bp_items') }}
 

@@ -6,7 +6,7 @@ dependencies:
 id: paragraph.bp_description
 field_name: bp_description
 entity_type: paragraph
-type: string
+type: text_long
 settings:
   unsigned: false
   size: normal
