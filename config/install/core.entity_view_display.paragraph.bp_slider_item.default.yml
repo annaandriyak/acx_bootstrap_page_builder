@@ -41,8 +41,7 @@ content:
     type: media_thumbnail
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
+      image_style: bp_slider
     third_party_settings: {  }
     weight: 3
     region: content

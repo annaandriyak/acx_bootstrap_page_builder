@@ -28,6 +28,7 @@ third_party_settings:
       children:
         - bp_body
         - bp_label
+        - bp_modal_button
       label: Content
       region: content
       parent_name: group_tabs
@@ -35,7 +36,10 @@ third_party_settings:
       format_type: tab
       format_settings: {  }
     group_tab_2:
-      children: {  }
+      children:
+        - bp_modal_size
+        - bp_modal_button_position
+        - bp_modal_vertically_centered
       label: Options
       region: content
       parent_name: group_tabs
@@ -51,18 +55,42 @@ content:
     type: text_textarea
     weight: 1
     region: content
-    settings:
-      rows: 5
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   bp_label:
     type: string_textfield
     weight: 0
     region: content
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
+  bp_modal_button:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bp_modal_size:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bp_modal_button_position:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bp_modal_vertically_centered:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+
+
+
 hidden:
   created: true
   status: true

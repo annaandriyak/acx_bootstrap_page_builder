@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: bp_slider
+label: bp-slider
+effects:
+  75b076a8-1234-4b42-85db-bf377c4d8d5f:
+    uuid: 75b076a8-1234-4b42-85db-bf377c4d8d5f
+    id: image_scale
+    weight: 0
+    data:
+      width: 800
+      height: 600
+      upscale: false

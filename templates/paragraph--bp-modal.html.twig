@@ -1,0 +1,57 @@
+{% set wrapper_attributes = create_attribute() %}
+{% set modal_attributes = create_attribute() %}
+
+{% set button_position = paragraph.bp_modal_button_position.value %}
+{% set modal_size = paragraph.bp_modal_size.value %}
+{% set modal_vertically_centered = paragraph.bp_modal_vertically_centered.value %}
+
+{%
+  set wrapper_classes = [
+    'clearfix',
+    button_position == 'center' ? 'mx-auto',
+    button_position == 'left' ? 'd-md-flex justify-content-md-start',
+    button_position == 'right' ? 'd-md-flex justify-content-md-end'
+  ]
+%}
+
+{%
+  set modal_classes = [
+    'modal-dialog',
+    modal_size == 'large' ? 'modal-lg',
+    modal_size == 'small' ? 'modal-sm',
+    modal_vertically_centered ? 'modal-dialog-centered'
+  ]
+%}
+
+<div{{ wrapper_attributes.addClass(wrapper_classes) }}>
+  <button
+    type="button"
+    class="btn btn-primary d-block"
+    data-bs-toggle="modal"
+    data-bs-target="#modal-{{ paragraph.id.value }}">
+    {{ paragraph.bp_modal_button.value |raw }}
+  </button>
+</div>
+
+<div class="modal fade" id="modal-{{ paragraph.id.value }}" tabindex="-1" role="dialog"
+     aria-labelledby="modal-{{ paragraph.id.value }}" aria-hidden="true">
+
+  <div{{ modal_attributes.addClass(modal_classes) }}>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title-{{ paragraph.id.value }}">
+          {{ paragraph.bp_label.value|raw }}
+        </h3>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="{{ 'Close'|t }}">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{ paragraph.bp_body.value|raw }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'Close'|t }}</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,3 +13,6 @@ content: {  }
 hidden:
   bp_body: true
   bp_label: true
+  bp_modal_size: true
+  bp_modal_button_position: true
+  bp_modal_vertically_centered: true

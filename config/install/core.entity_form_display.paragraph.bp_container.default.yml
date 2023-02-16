@@ -81,12 +81,10 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        add_above: '0'
+        add_above: add_above
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings:
-      limited_field_widgets:
-        limit_values: '0'
+    third_party_settings: {  }
   bp_media:
     type: media_library_widget
     weight: 1

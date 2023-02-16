@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_modal_vertically_centered
+    - paragraphs.paragraphs_type.bp_modal
+id: paragraph.bp_modal.bp_modal_vertically_centered
+field_name: bp_modal_vertically_centered
+entity_type: paragraph
+bundle: bp_modal
+label: Vertically centered
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: boolean
