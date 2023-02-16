@@ -6,6 +6,18 @@
  */
 
 /**
+ * Implements hook_page_attachments().
+ */
+function acx_bootstrap_page_builder_page_attachments(array &$page) {
+  $active_theme = \Drupal::theme()->getActiveTheme();
+  $admin_theme = \Drupal::config('system.theme')->get('admin');
+
+  if ($admin_theme !== $active_theme->getName()) {
+    $page['#attached']['library'][] = 'acx_bootstrap_page_builder/bootstrap.cdn';
+  }
+}
+
+/**
  * Implements hook_theme().
  */
 function acx_bootstrap_page_builder_theme($existing, $type, $theme, $path) {
@@ -42,4 +54,3 @@ function acx_bootstrap_page_builder_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
-
